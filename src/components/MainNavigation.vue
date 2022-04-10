@@ -6,10 +6,17 @@
       <router-link :to="{ name: 'offer' }">Leistungen</router-link>
       <router-link :to="{ name: 'contact' }">Kontakt</router-link>
     </div>
-    <div v-if="mobileNavigation">
+    <div v-if="mobileNavigation" @click="openOverhead = !openOverhead">
       <i class="burgermenu pi pi-bars"></i>
+      <div class="overhead" v-if="openOverhead">
+        <router-link :to="{ name: 'home' }">Home</router-link>
+        <router-link :to="{ name: 'about' }">Über mich</router-link>
+        <router-link :to="{ name: 'offer' }">Leistungen</router-link>
+        <router-link :to="{ name: 'contact' }">Kontakt</router-link>
+      </div>
     </div>
   </nav>
+  <div class="overhead"></div>
 </template>
 
 <script>
@@ -18,6 +25,7 @@ export default {
   data() {
     return {
       mobileNavigation: String,
+      openOverhead: false,
     };
   },
   created() {
@@ -46,6 +54,10 @@ nav {
   background-color: var(--primary-color);
   .burgermenu {
     color: var(--background-color);
+  }
+  .overhead {
+    display: flex;
+    flex-direction: column;
   }
 }
 a {
