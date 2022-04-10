@@ -30,7 +30,8 @@ export default {
   color: #2c3e50;
   font-size: 16px;
   min-height: 20rem;
-  width: 50rem;
+  width: 100%;
+  max-width: 50rem;
   margin: 3rem auto;
   background-color: var(--white-color);
 }

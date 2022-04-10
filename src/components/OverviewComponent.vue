@@ -28,7 +28,7 @@
 
 <style lang="scss">
 .content {
-  width: 100%;
+  padding: 2rem;
   img {
     width: 100%;
     object-fit: cover;
