@@ -1,3 +1,6 @@
 <template>
-  <p>offer</p>
+  <p>
+    Erziehungscoaching I Lernförderung I Psychomotorik I Neurophysiologische
+    Entwicklungsförderung I
+  </p>
 </template>
