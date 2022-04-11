@@ -49,6 +49,10 @@ export default {
 
 <style lang="scss">
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
   padding: 1rem;
   border: 3px solid var(--background-color);
   background-color: var(--primary-color);
@@ -65,9 +69,14 @@ a {
   color: var(--background-color);
   margin: 0 2rem;
   font-size: 1.5rem;
+  transition: 3s;
 }
 a:visited {
   text-decoration: none;
+}
+a:hover {
+  color: var(--white-color);
+  transition: 3s;
 }
 
 @media screen and (max-width: 700px) {

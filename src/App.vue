@@ -13,7 +13,7 @@ export default {
 </script>
 <style>
 :root {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   --font-color: #fafafa;
   --primary-color: #ffcdb2;
   --secondary-color: #ffb4a2;
@@ -34,5 +34,7 @@ export default {
   max-width: 50rem;
   margin: 3rem auto;
   background-color: var(--white-color);
+  border: 15px solid var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 </style>
